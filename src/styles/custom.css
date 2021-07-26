@@ -1,0 +1,49 @@
+* {
+  font-family: system-ui;
+}
+
+header {
+  background: rebeccapurple;
+  margin-bottom: 1.45rem;
+}
+
+header .inner-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.sign-in-btn {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-family: system-ui;
+  font-weight: 600;
+  min-width: 80px;
+}
+
+.sign-in-btn:hover {
+  background: hsl(0, 100%, 100%, 0.2);
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
