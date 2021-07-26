@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Clerk + Gatsby Starter`,
+    description: `Add auth and user management to your Gatsby site using Clerk.`,
+    author: `@ClerkDev`,
+    siteUrl: `https://github.com/clerkinc/clerk-gatsby-starter`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

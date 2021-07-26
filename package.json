@@ -1,9 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "clerk-gatsby-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Add auth and user management to your Gatsby site using Clerk.",
   "dependencies": {
     "gatsby": "^3.9.1",
     "gatsby-plugin-gatsby-cloud": "^2.9.1",
@@ -22,24 +20,17 @@
   "devDependencies": {
     "prettier": "2.3.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/clerkinc/clerk-gatsby-starter"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/clerkinc/clerk-gatsby-starter/issues"
   }
 }
