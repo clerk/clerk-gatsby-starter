@@ -1,3 +1,8 @@
+// Needed for using environment variables in this file
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Clerk + Gatsby Starter`,
@@ -6,6 +11,12 @@ module.exports = {
     siteUrl: `https://github.com/clerkinc/clerk-gatsby-starter`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-clerk`,
+      options: {
+        frontendApi: process.env.GATSBY_CLERK_FRONTEND_API,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

@@ -3,7 +3,9 @@
   "private": true,
   "description": "Add auth and user management to your Gatsby site using Clerk.",
   "dependencies": {
+    "@clerk/clerk-react": "^1.15.0",
     "gatsby": "^3.9.1",
+    "gatsby-plugin-clerk": "^1.0.2",
     "gatsby-plugin-gatsby-cloud": "^2.9.1",
     "gatsby-plugin-image": "^1.9.0",
     "gatsby-plugin-manifest": "^3.9.0",
