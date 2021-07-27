@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { SignedIn, SignedOut } from "@clerk/clerk-react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -16,17 +15,10 @@ const IndexPage = () => (
 
     <SignedOut>
       <h2>Hi, there!</h2>
-      <h5>Hit that "Sign In" button on the top right corner.</h5>
+      <p>
+        Hit that <strong>Sign In</strong> button on the top right corner.
+      </p>
     </SignedOut>
-
-    <StaticImage
-      src="../../docs/logo.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="Clerk + Gatsby"
-      style={{ marginBottom: `1.45rem` }}
-    />
 
     <p>
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>

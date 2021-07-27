@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Header from "./header"
 import "../styles/layout.css"
@@ -30,10 +31,15 @@ const Layout = ({ children }) => {
       <div className="main-container">
         <main>{children}</main>
         <footer>
-          Built with
-          {` `}
-          <a href="https://www.clerk.dev">Clerk</a> and{` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>.
+          <StaticImage
+            src="../../docs/logo.png"
+            width={300}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            placeholder="none"
+            alt="Clerk + Gatsby"
+            style={{ marginBottom: `1.45rem` }}
+          />
         </footer>
       </div>
     </>
