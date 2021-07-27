@@ -15,8 +15,8 @@ const IndexPage = () => (
     </SignedIn>
 
     <SignedOut>
-      <h2>Hi, stranger.</h2>
-      <h5>What about hitting that "Sign In" button on the top right corner?</h5>
+      <h2>Hi, there!</h2>
+      <h5>Hit that "Sign In" button on the top right corner.</h5>
     </SignedOut>
 
     <StaticImage
