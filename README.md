@@ -10,19 +10,13 @@ This repository shows how to add [Clerk](https://clerk.dev) to a [Gatsby](https:
 
 This starter uses `gatsby-plugin-clerk`, which wraps `ClerkProvider` around the whole app. With that, you can start using components from `@clerk/clerk-react` — such as `SignedIn` and `SignedOut` — on the root of your app.
 
-## Instructions
-
-### Setting up your Clerk configuration
-
-1. Go to your Clerk dashboard on https://dashboard.clerk.dev
-2. Create a new standard application or choose an existing one
-3. Go to your "Development" instance and locate your "Frontend API" on the "Home" tab (you will use it in the next section)
-
-### Running the starter locally
+## Running the starter locally
 
 1. Fork and clone this repository
 2. Install dependencies: `yarn install`
-3. Create a file called `.env.development` in the root directory of this repository, add a key `GATSBY_CLERK_FRONTEND_API` and assign to it your "Frontend API" found in the previous section
+3. Add your environment variables to a file called `.env.development`:
+   1. Set the "Frontend API" variable, found on your Clerk dashboard, under the **Home** tab: `echo "GATSBY_CLERK_FRONTEND_API_URL=YOUR_FRONTEND_API_URL" >> .env.development`
+   2. Set the "API key" variable, found on your Clerk dashboard, on the **Settings** page, under the **API keys** tab: `echo "CLERK_API_KEY=YOUR_API_KEY" >> .env.development`
 4. Run the app: `yarn start`
 
 ## Need help?
