@@ -21,6 +21,10 @@ const IndexPage = () => (
     </SignedOut>
 
     <p>
+      <a href="/api/get-user-id">Get your user ID from a Gatsby Function</a>
+    </p>
+
+    <p>
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </p>
   </Layout>
