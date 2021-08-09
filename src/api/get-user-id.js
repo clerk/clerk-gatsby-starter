@@ -1,13 +1,8 @@
-import { withSession } from "@clerk/clerk-sdk-node"
+import { requireSession } from "@clerk/clerk-sdk-node"
 
-export default withSession((req, res) => {
-  try {
-    if (req.session) {
-      res.status(200).json({ id: req.session.userId })
-    } else {
-      res.status(401).json({ id: null })
-    }
-  } catch (error) {
-    res.status(500).json({ error })
-  }
+// `requireSession` automatically throws an
+// error when no user session is found.
+
+export default requireSession((req, res) => {
+  res.status(200).json({ id: req.session.userId })
 })

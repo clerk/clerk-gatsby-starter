@@ -22,7 +22,7 @@ const GreetUser = () => {
       <h2>Hi, {user.firstName}</h2>
       {userId && (
         <p>
-          Your user ID is <strong>{userId}</strong>
+          Your ID: <strong>{userId}</strong>
         </p>
       )}
     </>
