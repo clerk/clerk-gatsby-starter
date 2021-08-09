@@ -43,6 +43,12 @@ const IndexPage = () => {
       )}
 
       <p>
+        <a href="https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/clerkinc/clerk-gatsby-starter">
+          Deploy this starter on Gatsby Cloud
+        </a>
+      </p>
+
+      <p>
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
       </p>
     </Layout>
