@@ -4,6 +4,8 @@
 
 This repository shows how to add [Clerk](https://clerk.dev) to a [Gatsby](https://gatsbyjs.com/) app.
 
+You can find its live demo at [https://starter.gatsby.clerk.app](https://starter.gatsby.clerk.app).
+
 [![Open in VS Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/clerkinc/clerk-gatsby-starter)
 
 ## Under the hood
