@@ -23,6 +23,4 @@ This starter uses `gatsby-plugin-clerk`, which wraps `ClerkProvider` around the 
 
 ## Need help?
 
-If you need any assistance, we're happy to help you out! Join us on our [Discord server](https://discord.gg/YRHz4h4whV) and tell us what you need.
-
-[![Chat](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/YRHz4h4whV)
+If you need any [assistance](https://clerk.dev/support), we're happy to help you out!
