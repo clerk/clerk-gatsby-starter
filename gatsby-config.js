@@ -15,7 +15,6 @@ module.exports = {
       resolve: `gatsby-plugin-clerk`,
       options: {
         frontendApi: process.env.GATSBY_CLERK_FRONTEND_API_URL,
-        // scriptUrl: process.env.GATSBY_CLERK_JS,
       },
     },
     `gatsby-plugin-react-helmet`,
