@@ -1,6 +1,5 @@
 {
   "name": "clerk-gatsby-starter",
-  "private": true,
   "description": "Use Clerk's authentication and user management with Gatsby",
   "dependencies": {
     "@clerk/clerk-react": "~2.0.0",
