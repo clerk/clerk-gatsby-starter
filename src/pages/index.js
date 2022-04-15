@@ -1,13 +1,22 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { SignedIn, SignedOut } from "@clerk/clerk-react"
+import { SignedIn, SignedOut, useUser } from "gatsby-plugin-clerk"
+import { withServerAuth } from "gatsby-plugin-clerk/ssr"
 import axios from "axios"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import GreetUser from "../components/greet-user"
 
-const IndexPage = () => {
+export const getServerData = withServerAuth(async props => {
+    const { userId, sessionId, getToken } = props.auth;
+    console.log('withServerAuth state: ', { userId, sessionId, getToken })
+    return { props: { message: 'hello' } };
+}, { loadUser: true });
+
+const IndexPage = ({ serverData }) => {
   const [isLogged, setIsLogged] = React.useState(null)
+  const { user } = useUser();
+  console.log(user, serverData)
 
   React.useEffect(() => {
     axios
