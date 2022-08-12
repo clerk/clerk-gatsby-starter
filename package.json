@@ -2,8 +2,8 @@
   "name": "clerk-gatsby-starter",
   "description": "Use Clerk's authentication and user management with Gatsby",
   "dependencies": {
-    "@clerk/clerk-react": "^2.2.1",
-    "@clerk/clerk-sdk-node": "^2.2.0",
+    "@clerk/clerk-react": "^4.0.2",
+    "@clerk/nextjs": "^4.0.2",
     "axios": "^0.24.0",
     "gatsby": "^4.2.0",
     "gatsby-plugin-clerk": "^2.0.0",
