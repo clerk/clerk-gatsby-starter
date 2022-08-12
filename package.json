@@ -5,6 +5,7 @@
     "@clerk/clerk-react": "^4.0.2",
     "@clerk/nextjs": "^4.0.2",
     "axios": "^0.24.0",
+    "dotenv": "^16.0.1",
     "gatsby": "^4.2.0",
     "gatsby-plugin-clerk": "^2.0.0",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
@@ -30,6 +31,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
+  "license": "0BSD",
   "repository": {
     "type": "git",
     "url": "https://github.com/clerkinc/clerk-gatsby-starter"
