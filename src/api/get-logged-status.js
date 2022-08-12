@@ -1,11 +1,13 @@
-import { withSession } from "@clerk/clerk-sdk-node"
+import { withAuth } from "@clerk/nextjs/api"
 
-// `withSession` allows the developer to
+// `withAuth` allows the developer to
 // handle a missing user session.
 
-export default withSession((req, res) => {
+export default withAuth((req, res) => {
+  const { sessionId } = req.auth
+
   try {
-    if (req.session) {
+    if (sessionId) {
       res.status(200).json({ isLogged: true })
     } else {
       res.status(200).json({ isLogged: false })

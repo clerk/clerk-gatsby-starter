@@ -1,8 +1,8 @@
-import { requireSession } from "@clerk/clerk-sdk-node"
+import { requireAuth } from "@clerk/nextjs/api"
 
-// `requireSession` automatically throws an
+// `requireAuth` automatically throws an
 // error when no user session is found.
 
-export default requireSession((req, res) => {
-  res.status(200).json({ id: req.session.userId })
+export default requireAuth((req, res) => {
+  res.status(200).json({ id: req.auth.userId })
 })
