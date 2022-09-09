@@ -10,7 +10,7 @@ const GreetUser = () => {
     axios
       .get("/api/get-user-id")
       .then(({ data }) => {
-        setUserId(data.id)
+        setUserId(data.userId)
       })
       .catch(error => {
         console.log(error)
