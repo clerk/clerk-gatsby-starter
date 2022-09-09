@@ -1,8 +1,10 @@
-import { requireAuth } from "@clerk/nextjs/api"
+import Clerk from "@clerk/clerk-sdk-node"
+import applyMiddleware from "../utils/applyMiddleware"
 
-// `requireAuth` automatically throws an
-// error when no user session is found.
+const requireAuth = Clerk.expressRequireAuth()
 
-export default requireAuth((req, res) => {
-  res.status(200).json({ id: req.auth.userId })
-})
+export default async function getUserIdHandler(req, res) {
+  await applyMiddleware(req, res, requireAuth)
+  const { userId } = req.auth
+  res.json({ userId })
+}

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { SignedIn, SignedOut } from "@clerk/clerk-react"
+import { SignedIn, SignedOut, useAuth } from "@clerk/clerk-react"
 import axios from "axios"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -8,17 +8,18 @@ import GreetUser from "../components/greet-user"
 
 const IndexPage = () => {
   const [isLogged, setIsLogged] = React.useState(null)
+  const { isSignedIn } = useAuth()
 
   React.useEffect(() => {
     axios
-      .get("/api/get-logged-status")
+      .get("/api/get-logged-in-status")
       .then(({ data }) => {
         setIsLogged(data.isLogged)
       })
       .catch(error => {
         console.log(error)
       })
-  }, [])
+  }, [isSignedIn])
 
   return (
     <Layout>
